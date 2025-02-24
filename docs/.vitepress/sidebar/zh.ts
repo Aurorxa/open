@@ -9,6 +9,8 @@ export const zhSidebar: DefaultTheme.Sidebar = {
       collapsed: true,
       items: [
         { text: 'Win/Office 下载、安装和激活', link: `/01_win/01_${commonDirectoryName}/` },
+        { text: 'Windows 软件包管理', link: `/01_win/02_${commonDirectoryName}/` },
+        { text: 'WSL2 的安装和配置', link: `/01_win/03_${commonDirectoryName}/` },
       ]
     },
     {
