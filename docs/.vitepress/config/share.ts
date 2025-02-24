@@ -106,7 +106,7 @@ export const sharedConfig = withMermaid(defineConfig({
     },
   },
   sitemap: {
-    hostname: `https://java.weiweixu.cn${VITE_BASE_URL}`,
+    hostname: `https://open.weiweixu.cn${VITE_BASE_URL}`,
   },
   markdown: { // markdown 配置
     math: true,
@@ -160,12 +160,12 @@ export const sharedConfig = withMermaid(defineConfig({
     logo: '/logo.svg',  // 左上角logo
     // 编辑链接
     editLink: {
-      pattern: 'https://github.com/Aurorxa/java/edit/master/docs/:path',
+      pattern: 'https://github.com/Aurorxa/open/edit/master/docs/:path',
       text: 'Edit this page on GitHub'
     },
     //社交链接
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/Aurorxa/java' },
+      { icon: 'github', link: 'https://github.com/Aurorxa/open' },
     ],
     externalLinkIcon: true,
     search: {
