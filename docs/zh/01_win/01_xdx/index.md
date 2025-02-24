@@ -2,7 +2,7 @@
 
 > [!IMPORTANT]
 >
-> * ① 本文是对 https://massgrave.dev 网站中相关操作的详细说明！！！
+> * ① 本文是对 https://massgrave.dev 和 https://firpe.cn/ 网站中相关操作的详细说明！！！
 > * ② 在有条件的基础上，请尊重版权（购买正版，即：给微软打钱）！！！
 
 
