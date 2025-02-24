@@ -272,8 +272,8 @@ irm https://get.activated.win | iex
 
 > [!NOTE]
 >
-> * ① 在键盘选择 `3` ，即：TSforge  激活方式。
-> * ② 再选择 `5` ，即：激活所有本地安装的 Windows 产品。
+> * ① 键盘选择 `3` ，即：TSforge  激活方式。
+> * ② 键盘选择 `5` ，即：激活所有本地安装的 Windows 产品。
 
 ![](./assets/35.gif)
 
