@@ -3,7 +3,7 @@
 }
 
 .medium-zoom--opened .medium-zoom-image {
-  z-index: 199 !important;
+  z-index: 1999 !important;
 }
 
 .VPSocialLinks.VPNavBarSocialLinks.social-links {
@@ -76,10 +76,41 @@ html {
   touch-action: manipulation;
   -webkit-touch-callout: none;
   -ms-touch-action: manipulation;
+  touch-action: pan-x pan-y;
+  user-scalable: no;
 }
 
 .VPSidebarItem.is-link.is-active.has-active .text {
   font-weight: 600 !important;
   color: var(--vp-c-brand-1) !important;
   transition: color 0.25s !important;
+}
+
+/* 自定义 md 文件 */
+.rendered-md img {
+  max-width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.rendered-md {
+  display: none;  /* 默认隐藏 */
+}
+
+.rendered-md.active {
+  display: block; /* 只有在 active 状态下才显示 */
+  max-width: 100%;
+}
+
+/* 侧边栏缩放 */
+.group:has([role='button']) .VPSidebarItem.level-0 .items {
+  padding-left: 15px !important;
+  border-left: 1px solid var(--vp-c-divider);
+  border-radius: 2px;
+  transition: background-color 0.25s;
+}
+
+/* 扩展表格 */
+.vp-doc th {
+    white-space: nowrap;
 }

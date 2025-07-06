@@ -1,4 +1,7 @@
-
+---
+title: '计算机常识科普'
+permalink: /guide
+---
 
 > [!IMPORTANT]
 >
@@ -249,7 +252,7 @@
 
 ## 4.1 概述
 
-* 激活 Windows 产品的，有 HWID、Ohook、TSforge、KMS38 和在线 KMS 激活方法，本次使用 TSforge 。
+* 激活 Windows 产品的，有 HWID、Ohook、TSforge、KMS38 和在线 KMS 激活方法，本次使用 [TSforge](https://massgrave.dev/tsforge) 。
 
 ## 4.2 TSforge 激活
 
@@ -263,11 +266,14 @@
 >
 > 需要联网，以便下载激活脚本！！！
 
-```powershell
+::: code-group
+```powershell[powershell 命令]
 irm https://get.activated.win | iex
 ```
-
+```md:img [cmd 控制台]
 ![](./assets/34.gif)
+```
+::: 
 
 * ③ 开始激活：
 

@@ -11,19 +11,14 @@ import TypeIt from "./components/TypeIt.vue"
 import SwitchLayout from './components/SwitchLayout.vue'
 import HomeUnderline from "./components/HomeUnderline.vue"
 import MouseClick from "./components/MouseClick.vue"
-import MouseFollower from "./components/MouseFollower.vue"
 import { NProgress } from 'nprogress-v2/dist/index.js'
-import {
-  NolebaseGitChangelogPlugin
-} from '@nolebase/vitepress-plugin-git-changelog/client'
 import {
   NolebaseInlineLinkPreviewPlugin,
 } from '@nolebase/vitepress-plugin-inline-link-preview/client'
 import '@nolebase/vitepress-plugin-inline-link-preview/client/style.css'
-import '@nolebase/vitepress-plugin-git-changelog/client/style.css'
 import 'nprogress-v2/dist/index.css'
 import "vitepress-markdown-timeline/dist/theme/index.css"
-import 'virtual:group-icons.css' //代码组样式
+import 'virtual:group-icons.css'
 import './style/index.css'
 import xgplayer from "./components/Xgplayer.vue"
 
@@ -38,10 +33,9 @@ export default {
     app.component('HomeUnderline', HomeUnderline)
     app.component('TypeIt', TypeIt)
     app.component('MouseClick', MouseClick) //鼠标跟随组件
-    app.component('MouseFollower', MouseFollower) //鼠标跟随组件
     app.component('xgplayer', xgplayer) //鼠标跟随组件
-    app.use(NolebaseGitChangelogPlugin)
     app.use(NolebaseInlineLinkPreviewPlugin)
+
     if (inBrowser) {
       NProgress.configure({ showSpinner: false })
       // 手动定义 onBeforeRouteChange
@@ -102,24 +96,5 @@ export default {
       () => route.path,
       () => nextTick(() => initZoom())
     )
-    // giscus配置
-    giscusTalk({
-      repo: 'Aurorxa/open', //仓库
-      repoId: 'R_kgDON-Yh3g', //仓库ID
-      category: 'Announcements', // 讨论分类
-      categoryId: 'DIC_kwDON-Yh3s4CnRB5', //讨论分类ID
-      mapping: 'pathname',
-      inputPosition: 'bottom',
-      lang: 'zh-CN',
-    },
-      {
-        frontmatter, route
-      },
-      //默认值为true，表示已启用，此参数可以忽略；
-      //如果为false，则表示未启用
-      //您可以使用“comment:true”序言在页面上单独启用它
-      true
-    )
-
   }
 }

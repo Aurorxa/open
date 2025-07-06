@@ -5,10 +5,19 @@ import type { DefaultTheme, LocaleSpecificConfig } from 'vitepress'
 
 export const zhConfig: LocaleSpecificConfig<DefaultTheme.Config> = {
   themeConfig: { // 主题设置
-    lastUpdatedText: '上次更新', // 上次更新显示文本
+    lastUpdated: {
+      text: '上次更新',
+      formatOptions: {
+        year: 'numeric',
+        month: 'long',   // 输出“六月”
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        hour12: false
+      }
+    },
     returnToTopLabel: '返回顶部', // 更改手机端菜单文字显示
     nav: zhNav,
-    sidebar: zhSidebar, // 侧边栏
     docFooter: { // 自定义上下页名
       prev: '上一篇', next: '下一篇'
     },
@@ -21,8 +30,6 @@ export const zhConfig: LocaleSpecificConfig<DefaultTheme.Config> = {
       level: [1, 6],
       label: '目录'
     },
-    //大纲顶部标题
-    outlineTitle: '当前页大纲',
     editLink: {
       pattern: 'https://github.com/Aurorxa/open/edit/master/docs/:path',
       text: '在 GitHub 编辑本页'
